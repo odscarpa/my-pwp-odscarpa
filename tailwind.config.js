@@ -2,6 +2,8 @@
 module.exports = {
     content: [
         "./index.html",
+        "./about.html",
+        "./issues.html",
         "./script.js"
 
     ],
@@ -11,7 +13,7 @@ module.exports = {
 
     // daisyUI config (optional - here are the default values)
     daisyui: {
-        themes: true, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
+        themes: false, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
         darkTheme: "dark", // name of one of the included themes for dark mode
         base: true, // applies background color and foreground color for root element by default
         styled: true, // include daisyUI colors and design decisions for all components
@@ -21,6 +23,10 @@ module.exports = {
         themeRoot: ":root", // The element that receives theme color CSS variables
     },
     theme: {
-        extend: {},
-    },
+        extend: {
+                fontFamily: {
+                    'custom': ['Abril Fatface', 'serif']
+                }
+            },
+        },
 }

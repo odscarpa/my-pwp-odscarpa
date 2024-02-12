@@ -4,44 +4,42 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="./output.css" rel="stylesheet">
-	<title>PWP</title>
+	<title>nicolefornm</title>
 </head>
 <body>
-<header>
-<div id="masthead" class="lg:px-12 md:px-8 px-2 py-2 flex justify-between items-center fixed top-0 inset-x-0 z-10 bg-[#018d9d]">
-<h1 class="hdr-logo" role="heading">
-	<a>
-		<img src="https://nicolefornm.com/wp-content/uploads/2023/06/Nicole-Tobiassen-Logo@2x.png" alt="logo" style="max-height: 96px;" class="max-w-32 md:max-w-full">
-	</a>
-</h1>
-	<nav id="nav-main" class="nav-main items-center lg:block hidden mx-2" role="navigation">
-		<ul class="flex justify-between items-center">
-			<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-119 uppercase text-white font-semibold tracking-wide mx-4 group">
-				<a class="menu-link hover:text-[#EFD240] hover:underline" target href="index.html">Home</a>
-			</li>
-			<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-161 uppercase text-white font-semibold tracking-wide mx-4 group">
-				<a class="menu-link hover:text-[#EFD240] hover:underline" target href="about.html">About</a>
-			</li>
-			<li class="mx-2"> </li>
-		</ul>
-	</nav>
 
-	<nav id="nav-main-mobile" class="nav-main-mobile items-center lg:hidden block -mx-2" role="navigation">
-		<ul class="flex justify-between items-center">
-			<li class="uppercase font-semibold text-white tracking-wide mx-2">
-				<a href="#" id="modal-menu-show" class="menu-link hover:text-[#EFD240] hover:underline">
-					<span class="hidden md:inline text-lg">☰</span>
-					 menu
-				</a>
+<div class="navbar bg-[#018d9d]">
+	<div class="flex-1">
+		<a href="index.html">
+			<img src="https://nicolefornm.com/wp-content/uploads/2023/06/Nicole-Tobiassen-Logo@2x.png" alt="logo" style="max-height: 96px;" class="max-w-32 md:max-w-full">
+		</a>
+	</div>
+	<div class="flex-none">
+		<ul class="menu menu-horizontal px-1">
+			<li><a class="menu-link hover:text-[#EFD240] hover:underline text-[#FFEFD5] text-2xl font-custom" target href="index.html">Home</a></li>
+			<li>
+				<details>
+					<summary class="menu-link hover:text-[#EFD240] hover:underline text-[#FFEFD5] text-2xl font-custom">
+						About
+					</summary>
+					<ul class="p-2 bg-[#018d9d] rounded-t-none">
+						<li><a class="menu-link hover:text-[#EFD240] hover:underline text-[#FFEFD5] font-custom" target href="about.html">Meet Nicole</a></li>
+						<li><a class="menu-link hover:text-[#EFD240] hover:underline text-[#FFEFD5] font-custom" target href="issues.html">Issues</a></li>
+					</ul>
+				</details>
 			</li>
-			<li class="mx-2"> </li>
 		</ul>
-	</nav>
+	</div>
 </div>
-</header>
 
 
-
-
+<section class="lg:px-12 md:px-8 px-4 max-w-3xl mx-auto prose font-custom">
+	<h2 class=" lg:text-5xl text-4xl font-black leading-tight mb-2">Nicole's Priorities</h2>
+	<p>Our state is facing critical challenges that demand immediate attention. I’m running for the State Senate because we need solutions that require common sense,
+		innovation and hard work to correct. As your state senator, I will be your advocate and voice. Let’s work together to create a safe and abundant life for ourselves,
+		our families, and future generations.</p>
+	<p>I am an outsider in this race, bringing a fresh perspective untethered to political establishment. Let’s solve real problems together, right now,
+		and ensure that your concerns are addressed in Santa Fe. Please, join me in creating a brighter future for New Mexico.</p>
+</section>
 </body>
 </html>
