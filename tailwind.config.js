@@ -25,7 +25,7 @@ module.exports = {
     theme: {
         extend: {
                 fontFamily: {
-                    'custom': ['Abril Fatface', 'serif']
+                    'custom': ['Ubuntu, sans-serif']
                 }
             },
         },
