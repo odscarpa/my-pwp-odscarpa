@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
 	<link href="./output.css" rel="stylesheet">
 	<title>nicolefornm</title>
 </head>
-<body>
+<body class="scroll-smooth">
 <!--Nav Bar-->
 <div class="navbar bg-[#018d9d]">
 	<div class="flex-1">
@@ -36,10 +36,10 @@
 </div>
 
 
-<!--Priorities-->
+<!--Priorities hero-->
 <div class="hero min-h-screen text-2xl bg-[url('/city-nightscape.jpg')] bg-fixed font-custom">
 	<div class="hero-overlay bg-opacity-60"></div>
-	<div class="hero-content text-center text-neutral-content">
+	<div class="hero-content text-[#f5f7ed]">
 		<div class="max-w-md">
 			<h1 class="mb-5 text-5xl font-bold text-[#f5f7ed]">Nicole’s Priorities</h1>
 			<p class="mb-5 text-[#f5f7ed]">Our state is facing critical challenges that demand immediate attention. I’m running for the State Senate because we need solutions that require common sense, innovation and hard work to correct.
@@ -47,135 +47,100 @@
 			</p>
 			<p class="mb-5 text-[#f5f7ed]">I am an outsider in this race, bringing a fresh perspective untethered to political establishment. Let’s solve real problems together, right now, and ensure that your concerns are addressed in Santa Fe.
 				Please, join me in creating a brighter future for New Mexico.</p>
-			<a href="issues.html"><button class="btn bg-[#EFD240] text-[#AA2D2E] hover:bg-[#018d9d] hover:text-[#EFD240]">Learn More</button></a>
+			<a href="#issues"><button class="btn  border-2 border-[#AA2D2E] hover:border-[#EFD240] bg-[#EFD240] text-[#AA2D2E] hover:bg-[#018d9d] hover:text-[#EFD240]">Learn More</button></a>
 		</div>
 	</div>
 </div>
 
 <!--Issue Cards-->
-<section id="cards" class=" block md:flex gap-6 justify-center items-center text-[#f5f7ed] bg-[#018d9d] py-10 mx-auto *:my-10 p-16 flex-4 min-h-max">
-	<div class="card bg-base-100 shadow-xl image-full max-w-max">
+<section id="cards" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6 justify-center items-center text-[#f5f7ed] bg-gradient-to-br from-[#018d9d] to-[#EFD240] p-16 mx-auto">
+
+	<div class="card bg-base-100 shadow-xl image-full w-60">
 		<figure><img src="books.jpg" alt="Shoes" /></figure>
 		<div class="card-body">
 			<h2 class="card-title">Education: Investing in Our Children’s Future</h2>
-			<p class="min-h-96">Our kids are leaving New Mexico, and they aren’t coming back. In spite of investing $29,000 per year per child through Albuquerque Public Schools, many are struggling with basic reading and math skills.</p>
-
+			<p>Our kids are leaving New Mexico, and they aren’t coming back. In spite of investing $29,000 per year per child through Albuquerque Public Schools, many are struggling with basic reading and math skills.</p>
 			<div class="card-actions justify-end">
-				<a href="#issues"><button class="btn bg-[#EFD240] text-[#AA2D2E] hover:bg-[#018d9d] hover:text-[#EFD240]">Learn More</button></a>
+				<a href="#education"><button class="btn border-2 border-[#AA2D2E] hover:border-[#EFD240] bg-[#EFD240] text-[#AA2D2E] hover:bg-[#018d9d] hover:text-[#EFD240]">Learn More</button></a>
 			</div>
 		</div>
 	</div>
 
-	<div class="card bg-base-100 shadow-xl image-full max-w-max">
+	<div class="card bg-base-100 shadow-xl image-full w-60">
 		<figure><img src="healthcare.jpg" alt="Shoes" /></figure>
 		<div class="card-body">
 			<h2 class="card-title">Healthcare Crisis: Retaining Our Doctors</h2>
-			<p class="min-h-96">Good doctors are leaving New Mexico, forcing us to seek medical care elsewhere because of bad legislation passed in Santa Fe. We must take immediate action to retain our healthcare professionals and ensure quality care for all New Mexicans.</p>
+			<p>Good doctors are leaving New Mexico, forcing us to seek medical care elsewhere because of bad legislation passed in Santa Fe. We must take immediate action to retain our healthcare professionals and ensure quality care for all New Mexicans.</p>
 			<div class="card-actions justify-end">
-				<a href="#issues"><button class="btn bg-[#EFD240] text-[#AA2D2E] hover:bg-[#018d9d] hover:text-[#EFD240]">Learn More</button></a>
+				<a href="#healthcare"><button class="btn border-2 border-[#AA2D2E] hover:border-[#EFD240] bg-[#EFD240] text-[#AA2D2E] hover:bg-[#018d9d] hover:text-[#EFD240]">Learn More</button></a>
 			</div>
 		</div>
 	</div>
 
-	<div class="card bg-base-100 shadow-xl image-full max-w-max">
-		<figure><img src="values.jpg" alt="Shoes" /></figure>
+	<div class="card bg-base-100 shadow-xl image-full w-60">
+		<figure><img src="values.jpg" alt="Values" /></figure>
 		<div class="card-body">
 			<h2 class="card-title">Representing Your Values</h2>
-			<p class="min-h-96">The majority of New Mexicans don’t agree with our extreme abortion laws – the most extreme in the country –
+			<p>The majority of New Mexicans don’t agree with our extreme abortion laws – the most extreme in the country –
 				which permit a full-term (40 weeks) baby to be aborted at birth.</p>
 			<div class="card-actions justify-end">
-				<a href="#issues"><button class="btn bg-[#EFD240] text-[#AA2D2E] hover:bg-[#018d9d] hover:text-[#EFD240]">Learn More</button></a>
+				<a href="#values"><button class="btn border-2 border-[#AA2D2E] hover:border-[#EFD240] bg-[#EFD240] text-[#AA2D2E] hover:bg-[#018d9d] hover:text-[#EFD240]">Learn More</button></a>
 			</div>
 		</div>
 	</div>
 
-	<div class="card bg-base-100 shadow-xl image-full max-w-max">
-		<figure><img src="economy.jpg" alt="Shoes" /></figure>
+	<div class="card bg-base-100 shadow-xl image-full w-60">
+		<figure><img src="economy.jpg" alt="Econ" /></figure>
 		<div class="card-body">
 			<h2 class="card-title">Economy and Job Creation</h2>
-			<p class="min-h-96">We need change and innovation to save our state and create a more prosperous future.
+			<p>We need change and innovation to save our state and create a more prosperous future.
 				I have a proven track record of helping businesses thrive and creating jobs that positively impact our communities.</p>
 			<div class="card-actions justify-end">
-				<a href="#issues"><button class="btn bg-[#EFD240] text-[#AA2D2E] hover:bg-[#018d9d] hover:text-[#EFD240]">Learn More</button></a>
+				<a href="#econ"><button class="btn border-2 border-[#AA2D2E] hover:border-[#EFD240] bg-[#EFD240] text-[#AA2D2E] hover:bg-[#018d9d] hover:text-[#EFD240]">Learn More</button></a>
 			</div>
 		</div>
 	</div>
 
-	<div class="card bg-base-100 shadow-xl image-full max-w-max ">
-		<figure><img src="drugs.jpg" alt="Shoes" /></figure>
+	<div class="card bg-base-100 shadow-xl image-full w-60">
+		<figure><img src="drugs.jpg" alt="Drugs" /></figure>
 		<div class="card-body">
 			<h2 class="card-title">Tackling Drug Abuse and Border Security</h2>
-			<p class="min-h-96">New Mexico now ranks as the worst state for drug use, and it’s time we take control of the uncontrolled flow of drugs across our borders.
+			<p>New Mexico now ranks as the worst state for drug use, and it’s time we take control of the uncontrolled flow of drugs across our borders.
 				Our neighbors and our children are dying. Let’s prioritize the safety of our communities and address this pressing issue.</p>
 			<div class="card-actions justify-end">
-				<a href="#issues"><button class="btn bg-[#EFD240] text-[#AA2D2E] hover:bg-[#018d9d] hover:text-[#EFD240]">Learn More</button></a>
+				<a href="#drugs"><button class="btn border-2 border-[#AA2D2E] hover:border-[#EFD240] bg-[#EFD240] text-[#AA2D2E] hover:bg-[#018d9d] hover:text-[#EFD240]">Learn More</button></a>
 			</div>
 		</div>
 	</div>
 
-	<div class="card bg-base-100 shadow-xl image-full max-w-max ">
-		<figure><img src="rights.jpg" alt="Shoes" /></figure>
+	<div class="card bg-base-100 shadow-xl image-full w-60">
+		<figure><img src="rights.jpg" alt="Rights" /></figure>
 		<div class="card-body">
 			<h2 class="card-title">Protecting Parental Rights</h2>
-			<p class="min-h-96">New Mexico has recently passed legislation that strips parents of any right to know what their children are learning in school about their world and about themselves.
+			<p>New Mexico has recently passed legislation that strips parents of any right to know what their children are learning in school about their world and about themselves.
 				These laws effectively create separate lives for children at schools where they are also receiving medical prescriptions and procedures without parental notification.</p>
 			<div class="card-actions justify-end">
-				<a href="#issues"><button class="btn bg-[#EFD240] text-[#AA2D2E] hover:bg-[#018d9d] hover:text-[#EFD240]">Learn More</button></a>
+				<a href="#rights"><button class="btn border-2 border-[#AA2D2E] hover:border-[#EFD240] bg-[#EFD240] text-[#AA2D2E] hover:bg-[#018d9d] hover:text-[#EFD240]">Learn More</button></a>
 			</div>
 		</div>
 	</div>
 </section>
 
 <!--About-->
-<section id="meet-nicole" class="p-16 *:pb-5 lg:px-52 px-10 text-[#f5f7ed] text-xl font-custom bg-[url('/more-balloons.jpg')] bg-center bg-cover bg-fixed gap-10 mx-auto max-md:space-y-12">
-<div>
-	<h1 class="text-3xl text-center"><strong>Meet Nicole</strong></h1>
+<section id="meet-nicole" class="p-16 *:pb-5 lg:px-52 px-10 text-[#f5f7ed] text-xl font-custom bg-[url('/more-balloons.jpg')] bg-center bg-cover bg-fixed gap-10 mx-auto max-md:space-y-12 bg-opacity-10">
+<div class="bg-[#018d9d] bg-opacity-75 rounded-3xl p-10">
+	<h1 class="text-3xl text-center text-[#EFD240]"><strong>Who is Nicole</strong></h1>
+<ul class="list-disc">
+	<li>Nicole Tobiassen, a native of Clearwater, Florida, demonstrated an entrepreneurial spirit from a young age.</li>
+	<li>Graduated from the University of South Florida with a major in History and a minor in Archaeology.</li>
+	<li>Built a successful career at Enterprise Rent-A-Car, rising to become the number one national account manager worldwide.</li>
+	<li>Excelled in growing the government contract sector and securing professional sports team accounts. Transformed the US CENTCOM account from five cars to hundreds.</li>
+	<li>Moved to Albuquerque in 2006, retired from the corporate career in 2008 with her husband, Mark, to found ActionCOACH.</li>
+	<li>Recognized for contributions to the business world, Nicole received the 40 Under 40 award from Biz Journal.</li>
+	<li>Became an advocate for better healthcare for all New Mexicans after her husband faced a life-threatening health crisis in 2017.</li>
+	<li>Currently involved in various community organizations, including Rotary International Foundation, Make a Wish Foundation, and others.</li>
+</ul>
 
-	<p>
-		Born and raised in Clearwater, Florida, Nicole Tobiassen’s entrepreneurial spirit was present from an early age, when, in Kindergarten,
-		she started selling iron-on T-shirt art from her parents’ driveway. After graduating from the University of South Florida
-		with a major in History and a minor in Archaeology, Nicole embarked on a successful career at Enterprise Rent-A-Car,
-		overseeing daily operations management and gradually climbing the ranks. She proved to be an exceptional leader
-		and was recognized as the number one national account manager worldwide.
-	</p>
-
-	<p>
-		During her time at Enterprise, Nicole excelled in growing the government contract sector and securing professional sports team accounts
-		and sponsorships. Her dedication and strategic approach led to remarkable results, notably transforming the US CENTCOM account from five cars to hundreds.
-		Through the relationships she formed as the account manager for the Border Patrol and New Mexico National Guard,
-		Nicole learned a great deal about the challenges our law enforcement faces at the US-Mexico border.
-		She led the Southwest corporate and government sales team from last place in the world rankings to first place in just one year.
-	</p>
-
-	<p>
-		In 2006, Nicole moved to Albuquerque and made the life-altering decision to retire from her corporate career and prioritize
-		spending time with her family. However, her entrepreneurial drive and desire to make a positive impact on others’ lives remained strong.
-	</p>
-
-	<p>
-		In 2008, amidst the recession, she and her husband, Mark, founded ActionCOACH, recognizing the opportunity to provide coaching and guidance
-		to business owners and leaders during challenging times. Over the past 15 years, they have had the privilege of being part of hundreds
-		of individuals’ growth journeys, helping them achieve remarkable results in their businesses.
-	</p>
-
-	<p>
-		Both Nicole and Mark have been widely recognized for their contributions to the business world, and Nicole was honored with the prestigious
-		40 Under 40 award by Biz Journal.
-	</p>
-
-	<p>
-		Nicole’s life changed forever when Mark was faced with a sudden life-or-death health crisis in 2017,
-		which resulted in him having to be transferred to a specialized clinic out-of-state. Overnight she had to become an advocate for his
-		care and had to learn everything there was to know about his condition. This experience has driven her to advocate for better
-		healthcare for all New Mexicans. New Mexicans should not face a death sentence because they lack the resources to go out-of-state
-		for medical care.
-	</p>
-
-	<p>
-		Today, Nicole is involved in Rotary International Foundation, Make a Wish Foundation, Lobo Club, 505 Sports Venture New Mexico,
-		the Hispano Chamber of Commerce, the Metro Federation of Republican Women, and New Mexico Angels.
-		She and Mark are proud parents to Luke (21) and Owen (19).
-	</p>
 </div>
 </section>
 
@@ -186,14 +151,13 @@
 			<img src="transparent.png" alt="nicole-portrait"/>
 		</div>
 		<div class="basis-5/6 max-md-8 md:py-2 text-[#f5f7ed] text-2xl font-custom">
-			<p>"As a proud member of the vibrant community in New Mexico State Senate District 21, I am committed to championing the values that make our region unique.
-				From the mesas to the mountains, our diversity is our strength. My vision for a brighter future is built on principles of collaboration, inclusivity, and progress.</p>
-			<p>I believe in investing in our education system to empower our youth, ensuring they have the tools they need to thrive in an ever-changing world. By supporting local businesses and promoting sustainable economic development,
-				we can create opportunities for job growth and prosperity for all.</p>
-			<p>Let's work together to address the pressing issues facing our community, from healthcare access to environmental conservation. By fostering open dialogue and finding common-sense solutions,
-				we can build a better future for generations to come.</p>
-			<p><span class="text-[#EFD240]">I am Nicole Tobiassen</span>, and I am honored to stand as your advocate for positive change in the New Mexico State Senate District 21. Together, let's shape a future that reflects the spirit and resilience
-				of our incredible community."</p>
+			<p class="pb-5">"I am <span class="font-extrabold">committed</span> to addressing the pressing issues facing our community, from <span class="font-extrabold">healthcare access</span>,
+				a failed educational system, to sustainable <span class="font-extrabold">economic development</span>. By fostering open dialogue and finding <span class="font-extrabold">common-sense</span> solutions,
+				we can build a <span class="font-extrabold">better future</span> for generations to come.</p>
+			<p><span class="font-extrabold text-[#EFD240]">I am Nicole Tobiassen</span>, and I am honored to stand as your <span class="font-extrabold">advocate for positive change</span> in the New Mexico
+				State Senate. <span class="font-extrabold">Together</span>, let's shape a future that reflects the spirit and resilience of our incredible
+				community."</p>
+
 		</div>
 	</div>
 </section>
@@ -201,7 +165,7 @@
 <section>
 
 <!--Photos-->
-<section id="photos" class="p-16 bg-[]">
+<section id="photos" class="p-16 bg-gradient-to-br from-[#018d9d] to-[#EFD240]">
 	<div class="carousel rounded-box">
 		<div class="carousel-item">
 			<img src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" alt="Burger" />
@@ -228,19 +192,66 @@
 </section>
 
 <!--Issue details-->
-	<section id="issues" class="p-16 *:pb-5 lg:px-52 px-10 text-[#f5f7ed] text-xl font-custom gap-10 mx-auto max-md:space-y-12">
-		<h2></h2>
-		<p></p>
-		<h2></h2>
-		<p></p>
-		<h2></h2>
-		<p></p>
-		<h2></h2>
-		<p></p>
-		<h2></h2>
-		<p></p>
-		<h2></h2>
-		<p></p>
+	<section id="issues" class="p-16 *:pb-5 lg:px-52 px-10 text-xl font-custom gap-10 mx-auto max-md:space-y-12 bg-fixed bg-cover bg-center bg-[url('/rail-yard.jpg')]">
+		<div class="bg-[#018d9d] bg-opacity-70 rounded-3xl p-10">
+		<h1 class="text-5xl text-center pb-3 text-[#f5f7ed]">Issues</h1>
+		<h2 id="education" class="text-3xl text-[#f5f7ed]">Education: Investing in Our Children’s Future</h2>
+		<p class="py-5 text-[#EFD240]">Our kids are leaving New Mexico, and they aren’t coming back. In spite of investing $29,000 per year per child through Albuquerque Public Schools,
+			many are struggling with basic reading and math skills. Only 35% of students are at grade level in the four core competencies.
+			It’s time we address this issue head-on and provide quality education that equips our children for success.</p>
+
+			<p class="py-5 text-[#EFD240]">To begin with, the behemoth bureaucracy that is Albuquerque Public Schools needs to be broken up and reformed,
+			with revenue distributed equally. We have much to learn from states that have moved up through the national rankings because of reforms that allow for educational competition.</p>
+
+
+
+		<h2 id="healthcare" class="text-3xl text-[#f5f7ed]">Healthcare Crisis: Retaining Our Doctors</h2>
+		<p class="py-5 text-[#EFD240]">I experienced firsthand the challenges of our healthcare system when my husband’s life was suddenly at stake due to a health emergency.
+			Good doctors are leaving New Mexico, forcing us to seek medical care elsewhere because of bad legislation passed in Santa Fe.
+			We must take immediate action to retain our healthcare professionals and ensure quality care for all New Mexicans. </p>
+
+			<p class="py-5 text-[#EFD240]">Just as my husband needed a medical advocate during his fight for life, I am stepping forward to be that voice for you.
+			We currently incentivize doctors to leave New Mexico rather than stay. We incentivize the movie industry, but instead of incentivizing doctors
+			to come to New Mexico, we have lost hundreds of our best medical professionals since 2018. It will take a decade of hard work and
+			innovative solutions to fix this problem, but it can be fixed.</p>
+
+
+
+		<h2 id="values" class="text-3xl text-[#f5f7ed]">Representing Your Values</h2>
+		<p class="py-5 text-[#EFD240]">The majority of New Mexicans don’t agree with our extreme abortion laws – the most extreme in the country –
+			which permit a full-term (40 weeks) baby to be aborted at birth. We are often told by people who advocate for this law that “it never happens.”
+			If it never happens, why should it even be an option? I will advocate for laws that align with values and opinions of the majority of New Mexicans,
+			not the extreme left of the Democrat Party.</p>
+
+
+
+			<h2 id="econ" class="text-3xl text-[#f5f7ed]">Economy and Job Creation</h2>
+			<p class="py-5 text-[#EFD240]">We need change and innovation to save our state and create a more prosperous future. I have a proven track record of helping businesses thrive
+				and creating jobs that positively impact our communities. We must start to create a business-friendly environment by reducing the
+				Gross Receipts Tax, creating tax incentives for entrepreneurs, rolling back regulations that crush small businesses,
+				as well as reforming our education system and reducing crime. Together, we can build a Brighter New Mexico where everyone can flourish.</p>
+
+
+
+			<h2 id="drugs" class="text-3xl text-[#f5f7ed]">Tackling Drug Abuse and Border Security</h2>
+			<p class="py-5 text-[#EFD240]">New Mexico now ranks as the worst state for drug use, and it’s time we take control of the uncontrolled flow of drugs across our borders.
+				Our neighbors and our children are dying. Let’s prioritize the safety of our communities and address this pressing issue.
+				Though much of the policy that has created the border crisis is decided in Washington, D.C., we can de-incentivize cartel activity
+				in our state by simply enforcing our laws. </p>
+				<p class="py-5 text-[#EFD240]">Currently, New Mexico has the most human trafficking, drug trafficking, and cartel activity
+				of the border states precisely because we have the most lax law enforcement and criminal justice system. Judicial reform
+				is an absolutely necessary first step towards restoring the rule of law in New Mexico.</p>
+
+
+
+			<h2 id="rights" class="text-3xl text-[#f5f7ed]">Protecting Parental Rights</h2>
+			<p class="py-5 text-[#EFD240]">New Mexico has recently passed legislation that strips parents of any right to know what their children are learning in school about
+				their world and about themselves. These laws effectively create separate lives for children at schools where they are also receiving medical
+				prescriptions and procedures without parental notification. Yet the establishment political and media class in our state is completely
+				silent about this revolution in family life. Why?</p>
+			<p class="py-5 text-[#EFD240]">As your state senator, I will fight to restore and protect your fundamental right to make decisions for your family, starting with fighting
+				for your right to know about the changes being made to your children’s lives and bodies.</p>
+		</div>
 	</section>
 
 <!--Footer-->
