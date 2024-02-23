@@ -11,7 +11,7 @@
 </head>
 <body class="scroll-smooth">
 <!--Nav Bar-->
-<div class="navbar bg-[#018d9d] shadow-2xl">
+<div class="navbar bg-[#018d9d]">
 	<div class="flex-1">
 		<a href="index.html">
 			<img src="https://nicolefornm.com/wp-content/uploads/2023/06/Nicole-Tobiassen-Logo@2x.png" alt="logo" style="max-height: 96px;" class="max-w-32 md:max-w-full">
@@ -19,15 +19,16 @@
 	</div>
 	<div class="flex-none">
 		<ul class="menu menu-horizontal px-1">
-			<li><a class="menu-link hover:text-[#EFD240] hover:underline text-[#f5f7ed] text-2xl font-custom" target href="index.html">Home</a></li>
+			<li><a class="menu-link bg-[#AA2E2D] hover:text-[#EFD240] hover:underline text-[#f5f7ed] text-2xl font-custom" target href="https://secure.anedot.com/nicolefornm/donate">Donate</a></li>
 			<li>
 				<details>
 					<summary class="menu-link hover:text-[#EFD240] hover:underline text-[#f5f7ed] text-2xl font-custom">
 						About
 					</summary>
 					<ul class="p-2 bg-[#018d9d] rounded-t-none">
-						<li><a class="menu-link hover:text-[#EFD240] hover:underline text-[#f5f7ed] font-custom" target href="#meet-nicole">Meet Nicole</a></li>
-						<li><a class="menu-link hover:text-[#EFD240] hover:underline text-[#f5f7ed] font-custom" target href="#issues">Issues</a></li>
+						<li><a class="menu-link hover:text-[#EFD240] hover:underline text-[#f5f7ed] text-lg font-custom" target href="index.html">Home</a></li>
+						<li><a class="menu-link hover:text-[#EFD240] hover:underline text-[#f5f7ed] font-custom text-lg" target href="#meet-nicole">Meet Nicole</a></li>
+						<li><a class="menu-link hover:text-[#EFD240] hover:underline text-[#f5f7ed] font-custom text-lg" target href="#issues">Issues</a></li>
 					</ul>
 				</details>
 			</li>
@@ -36,45 +37,30 @@
 </div>
 
 <!--landing-->
-<section class="bg-[#018d9d]">
-<!--	COUNTDOWN-->
-	<div class="grid grid-flow-col gap-5 text-center auto-cols-max">
-		<div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-    <span class="countdown font-mono text-5xl">
-      <span style="--value:15;"></span>
-    </span>
-			days
-		</div>
-		<div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-    <span class="countdown font-mono text-5xl">
-      <span style="--value:10;"></span>
-    </span>
-			hours
-		</div>
-		<div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-    <span class="countdown font-mono text-5xl">
-      <span style="--value:24;"></span>
-    </span>
-			min
-		</div>
-		<div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-    <span class="countdown font-mono text-5xl">
-      <span style="--value:58;"></span>
-    </span>
-			sec
-		</div>
+<section class="bg-[#23272a] font-custom">
+	<div class="flex flex-wrap gap-5 text-center auto-cols-max mx-96 pt-10">
+<!--COUNTDOWN PRIMARY-->
+<div id="primary" class="flex flex-col p-2 rounded-box border-2 border-[#AA2D2E] hover:border-[#EFD240] bg-[#EFD240] text-[#AA2D2E] hover:bg-[#018d9d] hover:text-[#EFD240] text-5xl">
+<p>Primary Election</p>
+</div>
+		<p class="text-white">Primary Election</p>
+<!--COUNTDOWN GENERAL-->
+<div id="general" class="flex flex-col p-2 rounded-box border-2 border-[#AA2D2E] hover:border-[#EFD240] bg-[#EFD240] text-[#AA2D2E] hover:bg-[#018d9d] hover:text-[#EFD240] text-5xl">
+
+</div>
+		<p class="text-white">General Election</p>
 	</div>
 <!--	MEET NICOLE-->
 	<div class="max-w-md font-custom">
-		<h1 class="mb-5 text-5xl font-bold text-[#f5f7ed]">Meet Nicole</h1>
-		<p class="mb-5 text-[#f5f7ed]">Nicole Tobiassen is running for the New Mexico State Senate to restore prosperity, safety, and access to quality health care for all New Mexicans.</p>
+		<h1 class="mb-5 text-5xl font-bold text-white">Meet Nicole</h1>
+		<p class="mb-5 text-white">Nicole Tobiassen is running for the New Mexico State Senate to restore prosperity, safety, and access to quality health care for all New Mexicans.</p>
 		<a href="#meet-nicole"><button class="btn  border-2 border-[#AA2D2E] hover:border-[#EFD240] bg-[#EFD240] text-[#AA2D2E] hover:bg-[#018d9d] hover:text-[#EFD240]">Learn More</button></a>
 	</div>
-	<img src="headshot-2-dark.jpg" alt="headshot" class="h-96"/>
+	<img src="headshot-2-dark.jpg" alt="headshot" class="h-96 shadow-2xl"/>
 </section>
 
 <!--Priorities hero-->
-<div class="hero min-h-screen text-2xl bg-[url('/city-nightscape.jpg')] bg-center font-custom">
+<div class="hero min-h-screen text-2xl bg-[url('/city-nightscape.jpg')] bg-center  bg-fixed font-custom">
 	<div class="hero-overlay bg-opacity-60"></div>
 	<div class="hero-content text-[#f5f7ed] font-custom">
 		<div class="max-w-md">
@@ -90,7 +76,7 @@
 </div>
 
 <!--Issue Cards-->
-<section id="cards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-around text-[#f5f7ed] font-custom bg-gradient-to-br from-[#018d9d] to-[#EFD240] p-16 mx-auto">
+<section id="cards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-around text-[#f5f7ed] font-custom bg-[#018d9d] p-16 mx-auto">
 	<div class="card bg-base-100 shadow-xl image-full w-60 mx-auto">
 		<figure><img src="books.jpg" alt="Shoes" /></figure>
 		<div class="card-body">
@@ -202,29 +188,16 @@
 <section>
 
 <!--Photos-->
-<section id="photos" class="p-16 bg-gradient-to-br from-[#018d9d] to-[#EFD240]">
+<section id="photos" class="p-16 bg-[#018d9d]">
 	<div class="carousel rounded-box">
-		<div class="carousel-item">
-			<img src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" alt="Burger" />
-		</div>
-		<div class="carousel-item">
-			<img src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg" alt="Burger" />
-		</div>
+
 		<div class="carousel-item">
 			<img src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" alt="Burger" />
 		</div>
 		<div class="carousel-item">
 			<img src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" alt="Burger" />
 		</div>
-		<div class="carousel-item">
-			<img src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" alt="Burger" />
-		</div>
-		<div class="carousel-item">
-			<img src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" alt="Burger" />
-		</div>
-		<div class="carousel-item">
-			<img src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" alt="Burger" />
-		</div>
+
 	</div>
 </section>
 
@@ -335,7 +308,8 @@
 	</nav>
 </footer>
 </section>
+<script src="./script.js">
 
-<script src="script.js" defer></script>
+</script>
 </body>
 </html>
