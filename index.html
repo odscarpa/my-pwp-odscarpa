@@ -10,6 +10,7 @@
 	<title>nicolefornm</title>
 </head>
 <body class="scroll-smooth">
+
 <!--Nav Bar-->
 <div class="navbar bg-[#018d9d]">
 	<div class="flex-1">
@@ -25,10 +26,12 @@
 					<summary class="menu-link hover:text-[#EFD240] hover:underline text-[#f5f7ed] text-2xl font-custom">
 						About
 					</summary>
-					<ul class="p-2 bg-[#018d9d] rounded-t-none">
+					<ul class="p-2 bg-[#018d9d] rounded-t-none z-50">
 						<li><a class="menu-link hover:text-[#EFD240] hover:underline text-[#f5f7ed] text-lg font-custom" target href="index.html">Home</a></li>
 						<li><a class="menu-link hover:text-[#EFD240] hover:underline text-[#f5f7ed] font-custom text-lg" target href="#meet-nicole">Meet Nicole</a></li>
 						<li><a class="menu-link hover:text-[#EFD240] hover:underline text-[#f5f7ed] font-custom text-lg" target href="#issues">Issues</a></li>
+						<li><a class="menu-link hover:text-[#EFD240] hover:underline text-[#f5f7ed] font-custom text-lg" target href="https://linktr.ee/nicolefornm">Socials</a></li>
+						<li><a class="menu-link hover:text-[#EFD240] hover:underline text-[#f5f7ed] font-custom text-lg" target href="https://portal.sos.state.nm.us/OVR/(S(2rvefzulmtkbbq5a1l30jkjh))/WebPages/InstructionsStep1.aspx">Register to Vote</a></li>
 					</ul>
 				</details>
 			</li>
@@ -37,30 +40,33 @@
 </div>
 
 <!--landing-->
-<section class="bg-[#23272a] font-custom">
-	<div class="flex flex-wrap gap-5 text-center auto-cols-max mx-96 pt-10">
-<!--COUNTDOWN PRIMARY-->
-<div id="primary" class="flex flex-col p-2 rounded-box border-2 border-[#AA2D2E] hover:border-[#EFD240] bg-[#EFD240] text-[#AA2D2E] hover:bg-[#018d9d] hover:text-[#EFD240] text-5xl">
-<p>Primary Election</p>
-</div>
-		<p class="text-white">Primary Election</p>
-<!--COUNTDOWN GENERAL-->
-<div id="general" class="flex flex-col p-2 rounded-box border-2 border-[#AA2D2E] hover:border-[#EFD240] bg-[#EFD240] text-[#AA2D2E] hover:bg-[#018d9d] hover:text-[#EFD240] text-5xl">
+<section class="bg-[#23272a] font-custom glass pb-12">
+	<!--MEET NICOLE-->
+	<div class="font-custom">
+		<div class="md:flex mx-auto max-md:space-y-12 p-9 flex-4 flex-shrink-0 justify-center max-md:px-16">
+			<img src="headshot-2-dark.jpg" alt="headshot" class="h-96 shadow-2xl border rounded-full"/>
+		</div>
+		<a href="#meet-nicole"><h1 class="mb-5 text-5xl font-bold text-white text-center hover:text-[#EFD240] hover:underline">Meet Nicole</h1></a>
+		<p class="mb-5 text-white text-xl text-center">Nicole Tobiassen is running for the New Mexico State Senate to restore prosperity, safety, and access to quality health care for all New Mexicans.</p>
+	</div>
 
-</div>
-		<p class="text-white">General Election</p>
+	<div class="flex flex-wrap gap-5 text-center justify-center pt-10">
+		<!--COUNTDOWN PRIMARY-->
+		<div class="p-2 rounded-box border-2 border-[#AA2D2E] hover:border-[#EFD240] bg-[#EFD240] text-[#AA2D2E] hover:bg-[#018d9d] hover:text-[#EFD240] text-2xl font-custom">
+		<h3 class="font-custom py-5"> Primary Election Timer:</h3>
+			<div id="primary"></div>
+		</div>
+
+<!--COUNTDOWN GENERAL-->
+		<div class=" p-2 rounded-box border-2 border-[#AA2D2E] hover:border-[#EFD240] bg-[#EFD240] text-[#AA2D2E] hover:bg-[#018d9d] hover:text-[#EFD240] text-2xl">
+		<h3 class="font-custom py-5"> General Election Timer:</h3>
+			<div id="general"></div>
+		</div>
 	</div>
-<!--	MEET NICOLE-->
-	<div class="max-w-md font-custom">
-		<h1 class="mb-5 text-5xl font-bold text-white">Meet Nicole</h1>
-		<p class="mb-5 text-white">Nicole Tobiassen is running for the New Mexico State Senate to restore prosperity, safety, and access to quality health care for all New Mexicans.</p>
-		<a href="#meet-nicole"><button class="btn  border-2 border-[#AA2D2E] hover:border-[#EFD240] bg-[#EFD240] text-[#AA2D2E] hover:bg-[#018d9d] hover:text-[#EFD240]">Learn More</button></a>
-	</div>
-	<img src="headshot-2-dark.jpg" alt="headshot" class="h-96 shadow-2xl"/>
 </section>
 
 <!--Priorities hero-->
-<div class="hero min-h-screen text-2xl bg-[url('/city-nightscape.jpg')] bg-center  bg-fixed font-custom">
+<div class="hero min-h-screen text-2xl bg-[url('/city-nightscape.jpg')] bg-center bg-fixed font-custom">
 	<div class="hero-overlay bg-opacity-60"></div>
 	<div class="hero-content text-[#f5f7ed] font-custom">
 		<div class="max-w-md">
@@ -76,7 +82,7 @@
 </div>
 
 <!--Issue Cards-->
-<section id="cards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-around text-[#f5f7ed] font-custom bg-[#018d9d] p-16 mx-auto">
+<section id="cards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-around text-[#f5f7ed] font-custom bg-[#018d9d] glass p-16 mx-auto">
 	<div class="card bg-base-100 shadow-xl image-full w-60 mx-auto">
 		<figure><img src="books.jpg" alt="Shoes" /></figure>
 		<div class="card-body">
@@ -153,7 +159,7 @@
 <div class="bg-[#018d9d] bg-opacity-75 rounded-3xl p-10">
 
 	<h1 class="text-3xl text-center text-[#EFD240]"><strong>Who is Nicole</strong></h1>
-<ul class="list-disc pb-5">
+<ul class="list-disc *:pb-5">
 	<li>Nicole Tobiassen, a native of Clearwater, Florida, demonstrated an entrepreneurial spirit from a young age.</li>
 	<li>Graduated from the University of South Florida with a major in History and a minor in Archaeology.</li>
 	<li>Built a successful career at Enterprise Rent-A-Car, rising to become the number one national account manager worldwide.</li>
@@ -168,7 +174,7 @@
 </section>
 
 <!--Quote-->
-<section class="bg-[#AA2E2D] py-18">
+<section class="bg-[#AA2E2D] glass py-18">
 	<div class="md:flex gap-10 mx-auto max-md:space-y-12 p-16 flex-4">
 		<div class="basis-1/6 flex-shrink-0 justify-center max-md:px-16">
 			<img src="transparent.png" alt="nicole-portrait"/>
@@ -186,20 +192,6 @@
 </section>
 
 <section>
-
-<!--Photos-->
-<section id="photos" class="p-16 bg-[#018d9d]">
-	<div class="carousel rounded-box">
-
-		<div class="carousel-item">
-			<img src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" alt="Burger" />
-		</div>
-		<div class="carousel-item">
-			<img src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" alt="Burger" />
-		</div>
-
-	</div>
-</section>
 
 <!--Issue details-->
 	<section id="issues" class="p-16 *:pb-5 lg:px-52 px-10 text-xl font-custom gap-10 mx-auto max-md:space-y-12 bg-fixed bg-cover bg-center bg-[url('/rail-yard.jpg')]">
@@ -308,8 +300,7 @@
 	</nav>
 </footer>
 </section>
-<script src="./script.js">
 
-</script>
+<script src="./script.js"></script>
 </body>
 </html>
