@@ -26,5 +26,5 @@ function makeCountdown(targetDate, elementId, message) {
     }, 1000); // Update every second
 
 }
-makeCountdown(primaryElection, "primary", "PRIMARY ELECTION DAY!")
+makeCountdown(primaryElection, "primary", "PRIMARY ELECTION WON!")
 makeCountdown(generalElection, "general", "GENERAL ELECTION DAY!")
