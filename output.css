@@ -798,13 +798,6 @@ html{
   pointer-events: none;
 }
 
-.btn-circle{
-  height: 3rem;
-  width: 3rem;
-  border-radius: 9999px;
-  padding: 0px;
-}
-
 :where(.btn:is(input[type="checkbox"])),
 :where(.btn:is(input[type="radio"])){
   width: auto;
@@ -887,30 +880,6 @@ html{
   z-index: 20;
   --tw-text-opacity: 1;
   color: var(--fallback-nc,oklch(var(--nc)/var(--tw-text-opacity)));
-}
-
-.carousel{
-  display: inline-flex;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.carousel-item{
-  box-sizing: content-box;
-  display: flex;
-  flex: none;
-  scroll-snap-align: start;
-}
-
-.carousel-center .carousel-item{
-  scroll-snap-align: center;
-}
-
-.carousel-end .carousel-item{
-  scroll-snap-align: end;
 }
 
 :root .countdown{
@@ -1332,10 +1301,6 @@ html{
   border-radius: inherit;
 }
 
-.carousel::-webkit-scrollbar{
-  display: none;
-}
-
 @keyframes checkmark{
   0%{
     background-position-y: 5px;
@@ -1601,34 +1566,6 @@ html{
         0 0 0 2px rgb(0 0 0 / 5%);
     text-shadow: 0 1px rgb(0 0 0 / var(--glass-text-shadow-opacity, 5%));
   }
-}
-
-.btn-circle:where(.btn-xs){
-  height: 1.5rem;
-  width: 1.5rem;
-  border-radius: 9999px;
-  padding: 0px;
-}
-
-.btn-circle:where(.btn-sm){
-  height: 2rem;
-  width: 2rem;
-  border-radius: 9999px;
-  padding: 0px;
-}
-
-.btn-circle:where(.btn-md){
-  height: 3rem;
-  width: 3rem;
-  border-radius: 9999px;
-  padding: 0px;
-}
-
-.btn-circle:where(.btn-lg){
-  height: 4rem;
-  width: 4rem;
-  border-radius: 9999px;
-  padding: 0px;
 }
 
 .join.join-vertical{
@@ -1908,12 +1845,12 @@ html{
   justify-content: center;
 }
 
-.justify-around{
-  justify-content: space-around;
+.justify-between{
+  justify-content: space-between;
 }
 
-.justify-items-end{
-  justify-items: end;
+.justify-around{
+  justify-content: space-around;
 }
 
 .gap-10{
@@ -1967,11 +1904,6 @@ html{
   background-color: rgb(1 141 157 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#23272a\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(35 39 42 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#AA2E2D\]{
   --tw-bg-opacity: 1;
   background-color: rgb(170 46 45 / var(--tw-bg-opacity));
@@ -1995,12 +1927,12 @@ html{
   --tw-bg-opacity: 0.6;
 }
 
-.bg-opacity-70{
-  --tw-bg-opacity: 0.7;
-}
-
 .bg-opacity-75{
   --tw-bg-opacity: 0.75;
+}
+
+.bg-opacity-80{
+  --tw-bg-opacity: 0.8;
 }
 
 .bg-\[url\(\'\/city-nightscape\.jpg\'\)\]{
@@ -2025,11 +1957,6 @@ html{
 
 .bg-center{
   background-position: center;
-}
-
-.object-right-bottom{
-  -o-object-position: right bottom;
-     object-position: right bottom;
 }
 
 .p-10{
@@ -2082,14 +2009,8 @@ html{
   padding-bottom: 1.25rem;
 }
 
-.py-9{
-  padding-top: 2.25rem;
-  padding-bottom: 2.25rem;
-}
-
-.px-28{
-  padding-left: 7rem;
-  padding-right: 7rem;
+.pb-12{
+  padding-bottom: 3rem;
 }
 
 .pb-3{
@@ -2104,16 +2025,8 @@ html{
   padding-top: 2.5rem;
 }
 
-.pb-12{
-  padding-bottom: 3rem;
-}
-
 .text-center{
   text-align: center;
-}
-
-.text-justify{
-  text-align: justify;
 }
 
 .font-custom{
@@ -2243,6 +2156,11 @@ html{
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
+
+  .md\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 1024px){
@@ -2250,8 +2168,18 @@ html{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .lg\:px-32{
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
   .lg\:px-52{
     padding-left: 13rem;
     padding-right: 13rem;
+  }
+
+  .lg\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
