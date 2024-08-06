@@ -1,4 +1,4 @@
-const primaryElection = new Date("2024-06-04T20:59:59").getTime();
+const primaryElection = new Date("2024-08-06T20:59:59").getTime();
 const generalElection = new Date("2024-11-05T20:59:59").getTime();
 function makeCountdown(targetDate, elementId, message) {
 // Update the countdown every second
